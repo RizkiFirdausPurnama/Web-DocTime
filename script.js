@@ -102,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 passwordError.style.display = 'none';
             }
 
-            // If all valid, redirect to the main page (index.html) after a short delay
             if (isValid) {
                 alert('Akun berhasil dibuat! Silakan login.');
                 setTimeout(() => {
