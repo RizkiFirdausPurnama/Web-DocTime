@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - DocTime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Foto/Logo.png" alt="DocTime Logo"></a>
+        </div>
+        <nav>
+        <a href="index.html">Back</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="signup-page">
+            <div class="signup-image">
+                <!-- Ganti src dengan path gambar ilustrasi Anda -->
+                <img src="Foto/singup.png" alt="Ilustrasi Sign Up">
+            </div>
+            <div class="signup-form">
+                <h2>Welcome!!<br>Sign Up</h2>
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="signup-name">Your Name</label>
+                        <input type="text" id="signup-name" required>
+                        <p class="error-message" id="signup-name-error">Nama harus diisi.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email address</label>
+                        <input type="email" id="signup-email" required>
+                        <p class="error-message" id="signup-email-error">Email harus diisi dan valid (berakhir dengan @gmail.com)</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                        <p class="error-message" id="signup-password-error">Password harus diisi.</p>
+                    </div>
+                    <button  type="submit" class="btn-dark">Create Account</button>
+                    
+                    <div class="social-login" style="margin-top: 20px;">
+                        <button type="button" class="btn-google">
+                            <img src="https://placehold.co/20x20/DB4437/FFF?text=G" alt="Google">
+                            Sign in with Google
+                        </button>
+                        <p>Or Sign in with</p>
+                        <div class="social-icons">
+                            <img src="https://placehold.co/30x30/4267B2/FFF?text=f" alt="Facebook">
+                            <img src="https://placehold.co/30x30/000000/FFF?text=A" alt="Apple">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

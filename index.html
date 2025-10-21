@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Selamat Datang di DocTime</title>
+    <link rel="icon" type="image/x-icon" href="Foto/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Foto/Logo.png" alt="DocTime Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Artikel</a></li>
+                <li><a href="#">DocHistory</a></li>
+                <li><a href="schedule.html">DocSchedule</a></li>
+                <li><a href="chat.html">DocChat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="landing-page">
+            <div class="landing-content">
+                <h1 class="highlight">Halo, selamat datang!!</h1>
+                <h1>Atasi masalah kesehatan dengan cepat</h1>
+                <p>Konsultasi dengan dokter, membuat jadwal, informasi kesehatan terverifikasi langsung. Semua akan kami tangani.</p>
+                <div class="landing-buttons">
+                    <a href="signup.html" class="btn btn-primary">Daftar</a>
+                    <button id="show-login-btn" class="btn btn-secondary">Login</button>
+                </div>
+            </div>
+            <div class="landing-image">
+
+                <img src="Foto/Landingpage.png" alt="Ilustrasi Dokter">
+            </div>
+        </section>
+    </main>
+
+
+    <div id="login-popup-overlay" class="popup-overlay">
+        <div class="login-popup">
+            <span id="close-login-btn" class="close-btn">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">EMAIL</label>
+                    <input type="email" id="login-email" required>
+                    <p class="error-message" id="login-email-error">Email harus diisi dan menggunakan @gmail.com</p>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">PASSWORD</label>
+                    <input type="password" id="login-password" required>
+                    <p class="error-message" id="login-password-error">Password harus diisi.</p>
+                </div>
+                <div class="login-options">
+                    <div>
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <a href="#">Forgot password</a>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">LOGIN</button>
+            </form>
+            <div class="social-login">
+                <p>Or continue with</p>
+                <div class="social-icons">
+                    <img src="Foto/google.png" alt="Google">
+                    <img src="Foto/Facbook (1).png" alt="Facebook">
+                    <img src="Foto/apple.png" alt="Apple">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

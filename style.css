@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: transparent;
+    width: 90%;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #00acc1;
+}
+
+
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5%;
+    height: calc(100vh - 80px); 
+}
+
+.landing-content {
+    max-width: 500px;
+}
+
+.landing-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.landing-content h1 .highlight {
+    color: #00acc1;
+    font-weight: 400;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.landing-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.landing-buttons .btn {
+    padding: 12px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #26c6da;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #00acc1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #555;
+    border: 1px solid #ccc;
+}
+.btn-secondary:hover {
+    background-color: #f1f1f1;
+    border-color: #aaa;
+}
+
+.landing-image img {
+    max-width: 550px;
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-popup {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.login-popup h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.social-login p {
+    color: #aaa;
+    margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Sign Up Page */
+.signup-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 5%;
+    gap: 50px;
+}
+
+.signup-image img {
+    max-width: 450px;
+}
+
+.signup-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 400px;
+}
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.btn-dark {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn-dark:hover {
+    background-color: #555;
+}
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-google img {
+    width: 20px;
+}
+
+
+.home-hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+.home-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.home-hero p {
+    color: #666;
+    margin-bottom: 30px;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.service-card img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+.articles-section {
+    padding: 40px 0;
+}
+.articles-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.article-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.article-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.article-card h3 {
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+.article-card a {
+    color: #00acc1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Chat/Schedule Page */
+.page-header {
+    padding: 40px 0;
+}
+.page-header h1 {
+    font-size: 2.5rem;
+}
+.search-bar {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+.search-bar input {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.search-bar button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #26c6da;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.doctor-list .doctor-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.doctor-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #e0f7fa;
+}
+.doctor-info h3 {
+    margin: 0;
+}
+.doctor-actions {
+    margin-left: auto;
+}
+.doctor-actions .btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 40px 5%;
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #666;
+}
+.footer-section a:hover {
+    color: #00acc1;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* Error Message Style */
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none; /* Hidden by default */
+}
